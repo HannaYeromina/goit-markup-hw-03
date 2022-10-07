@@ -1,10 +1,22 @@
-body{
+body {
     background-color: #ffffff;
     font-family: Roboto,sans-serif;
     color: #212121;
 }
-li{
+html {
+    box-sizing: border-box;
+}
+
+li {
     list-style-type: none;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 1600px;
+    height: 80px;
 }
 .logo {
     font-family: Raleway;
@@ -15,10 +27,15 @@ li{
     line-height: 30.52px;
     letter-spacing: 0.03em;
 }
-.logo-bly{
+.logo-bly {
     color: #2196f3;
 }
-.nav{
+.header-nav {
+    display: flex;
+}
+.nav {
+    margin-right: 50px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -26,10 +43,16 @@ li{
     text-decoration: none;
     color: #000000;
 }
-.nav:hover{
+.nav:hover {
     color: #2196f3 ;
 }
-.contact-header{
+.contact{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-header {
+    margin-right: 50px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16.41px;
@@ -37,20 +60,32 @@ li{
     text-decoration: none;
     color: #757575;
 }
-.contact-header:hover{
+.contact-header:hover {
     color: #2196f3;
 }
-.hero{
+.hero {
     background-color:#2f303a ;
+    width: 1600px;
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-.hero-h{
+.hero-h {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 0.06em;
+    text-align: center;
+    width: 696px;
+    height: 120px;
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 280px;
     color:#ffffff;
 }
-.hero-button{
+.hero-button {
     font-weight:700;
     line-height: 30px;
     font-size: 16px;
@@ -58,41 +93,46 @@ li{
     color:#ffffff;
     background-color: #2196f3;
     cursor: pointer;
+    border-radius: 4px;
+    
 }
-.work-h{
+.work-h {
     font-weight: 700;
     font-size: 14px;
     line-height: 16.41px;
     letter-spacing: 0.03em;
 }
-.work-p{
+.work-p {
     font-size: 14px ;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575
 }
-.second-title{
+.second-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42.19px;
     letter-spacing: 0.03em;
 }
-.name{
+.name {
     font-weight: 500;
     font-size: 16px;
     line-height: 18.75px;
     letter-spacing: 0.03em;
 }
-.job-title{
+.job-title {
     line-height: 18.75px;
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #757575;
 }
-.footer{
+.footer {
     background-color: #2f303a;
 }
-.address-footer{
+.footer-address-contact{
+    margin-bottom: 60px;
+}
+.address-footer  {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -100,7 +140,7 @@ li{
     text-decoration: none;
     font-style: normal;
 }
-.address-footer:hover{
+.address-footer:hover {
     color:#2196f3 ;
 }
 .contact-footer{
@@ -111,10 +151,10 @@ li{
     text-decoration: none;
     font-style: normal;
 }
-.contact-footer:hover{
+.contact-footer:hover {
     color: #2196f3;
 }
-.logo-footer{
+.logo-footer {
     font-family: Raleway;
     font-weight: 700;
     text-decoration: none;
@@ -123,7 +163,7 @@ li{
     line-height: 30.52px;
     letter-spacing: 0.03em;
 }
-.nav-portfolio{
+.nav-portfolio {
     font-family: inherit;
     font-weight: 500;
     line-height: 26px;
@@ -139,14 +179,14 @@ li{
     color: #ffffff;
     background-color:#2196f3;
 }
-.title-portfolio{
+.title-portfolio {
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
 
 }
-.paragraph-portfolio{
+.paragraph-portfolio {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
