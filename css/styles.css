@@ -287,6 +287,10 @@ margin-right: 50px;
     cursor: pointer;
     border-radius: 4px;
 }
+.nav-portfolio-section{
+    padding-top: 94px;
+    padding-bottom: 34px;
+}
 .button-list {
     margin-right: 8px;
 }
@@ -335,4 +339,5 @@ margin-right: 50px;
     border-left:1px solid #eeeeee ;
     border-right:1px solid #eeeeee;
     border-bottom:1px solid #eeeeee;
+    padding: 20px 24px;
 }
