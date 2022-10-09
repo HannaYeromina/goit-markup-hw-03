@@ -6,12 +6,16 @@ body {
 html {
     box-sizing: border-box;
 }
+h1,h2,h3,p,ul{
+    margin: 0 0;
+    padding: 0 0;
+}
 
 li {
     list-style-type: none;
 }
 .container{
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -23,13 +27,10 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    width: 1600px;
-    height: 80px;
+    border-bottom:1px solid #ececec;
 }
 .logo {
     margin: 0 0;
-    margin-left: 215px;
     font-family: Raleway;
     font-weight:700 ; 
     color: #000000; 
@@ -54,7 +55,8 @@ li {
     padding: 0;
 }
 .nav {
-    margin-right: 50px;
+    display: block;
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -62,7 +64,10 @@ li {
     text-decoration: none;
     color: #000000;
 }
-.nav:nth-child(:last-child){
+.list-nav {
+    margin-right: 50px;
+}
+.list-nav:nth-child(:last-child){
     margin-right: 0;
 }
 .nav:hover {
@@ -72,14 +77,13 @@ li {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    margin-right: 215px;
 }
 .contact-one{
     margin-right: 50px;
 }
 .contact-header {
-    margin-right: 50px;
-
+    display: block;
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 16.41px;
@@ -89,6 +93,12 @@ li {
 }
 .contact-header:hover {
     color: #2196f3;
+}
+.list-contact-header {
+margin-right: 50px;
+}
+.list-contact-header:nth-child(:last-child){
+    margin-right: 0;
 }
 .hero {
     background-color:#2f303a ;
@@ -110,8 +120,10 @@ li {
     text-transform: uppercase;
 }
 .hero-button {
-    width: 216px;
-    height: 60px;
+    display: block;
+    padding: 10px 32px;
+    margin: 0 auto;
+    margin-top: 20px;
     font-weight:700;
     line-height: 30px;
     font-size: 16px;
@@ -120,13 +132,12 @@ li {
     background-color: #2196f3;
     cursor: pointer;
     border-radius: 4px;
-    display: block;
-    margin: 0 auto;
-    
+}
+.work-section {
+    padding: 94px 0 ;
 }
 .work{
     display: flex;
-    margin: 94px auto;
 }
 .work .work-list:not(:last-child) {
     margin-right: 30px;
@@ -143,8 +154,11 @@ li {
     letter-spacing: 0.03em;
     color: #757575
 }
+.images-section{
+    padding: 94px 0;
+}
 .second-title-work {
-    margin: 50px 0;
+    margin-bottom:  50px;
 }
 .second-title {
     text-align: center;
@@ -152,6 +166,7 @@ li {
     font-size: 36px;
     line-height: 42.19px;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 .second-list{
     display: flex;
@@ -159,9 +174,16 @@ li {
 .images{
     width: 370px;
     margin-right: 30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .images:nth-child(:last-child){
     margin-right: 0;
+}
+.employees-section{
+    padding: 94px 0;
+    background-color: #f5f4fa;
 }
 .employees{
     display: flex;
@@ -169,10 +191,14 @@ li {
 .employees-list{
     width: 270px;
     margin-right: 30px;
-    margin-bottom: 94px;
 }
 .employees-list:nth-child(:last-child) {
     margin-right: 0;
+}
+.foto{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .name {
     font-weight: 500;
@@ -180,6 +206,8 @@ li {
     line-height: 18.75px;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px ;
 }
 .job-title {
     line-height: 18.75px;
@@ -187,11 +215,10 @@ li {
     letter-spacing: 0.03em;
     color: #757575;
     text-align: center;
+    padding-bottom: 30px;
 }
 .footer {
     background-color: #2f303a;
-    height: 252px;
-    width: 1600px;
     margin: auto;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -200,7 +227,7 @@ li {
     width: 231px;
     height: 81px;
     margin-left: 215px;
-    margin-top: 20px;
+    margin-bottom: 60px;
 }
 .address-footer  {
     font-size: 14px;
@@ -209,6 +236,7 @@ li {
     color: #ffffff;
     text-decoration: none;
     font-style: normal;
+    margin-bottom: 9px;
 }
 .address-footer:hover {
     color:#2196f3 ;
@@ -220,6 +248,10 @@ li {
     color: #ffffff;
     text-decoration: none;
     font-style: normal;
+    margin-bottom: 9px;
+}
+.contact-footer:nth-child(:last-child) {
+    margin-bottom: 0;
 }
 .contact-footer:hover {
     color: #2196f3;
@@ -233,12 +265,13 @@ li {
     line-height: 30.52px;
     letter-spacing: 0.03em;
     margin: 0 0;
-    margin-left: 215px;
+    margin-bottom: 20px;
+    padding-left: 215px;
 }
 .button-box{
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .nav-portfolio {
     font-family: inherit;
@@ -249,22 +282,27 @@ li {
     text-decoration: none;
     color: #212121;
     background-color: #f5f4fa;
-    border-color: #f5f4fa;
+    box-sizing: 0;
+    border:none;
     cursor: pointer;
+    border-radius: 4px;
+}
+.button-list {
     margin-right: 8px;
 }
-.nav-portfolio:nth-child(:last-child){
+.button-list:nth-child(:last-child) {
     margin-right: 0px;
 }
 .nav-portfolio:hover {
     color: #ffffff;
     background-color:#2196f3;
+
 }
 .portfolio-box {
     display: flex;
     flex-wrap: wrap;
 }
-.portfolio-list{
+.portfolio-list {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -275,15 +313,26 @@ li {
 .portfolio-list:nth-last-child(-n+3){
     margin-bottom: 94px;
 }
+.portfolio{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .title-portfolio {
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 .paragraph-portfolio {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: #757575;
+}
+.border{
+    border-left:1px solid #eeeeee ;
+    border-right:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
 }
